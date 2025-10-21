@@ -14,7 +14,7 @@ type Obligatorio<T> = {
 [K in keyof T]-?: T[K];
 };
 type config = { debug?: boolean, verbose?: boolean };
-type StrictConfig = Obligatorio<Config>;
+type StrictConfig = Obligatorio<config>;
 // { debug: boolean; verbose: boolean }
 
 /* Readonly<Type>
